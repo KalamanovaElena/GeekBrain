@@ -27,14 +27,24 @@
 // Напишите программу, которая на вход принимает число и выдаёт
 // является ли число чётным (делится ли оно на два без остатка).
 
-Console.WriteLine("Введи число: ");
-int a = int.Parse(Console.ReadLine()!);
-  if (a % 2==1)
-    {Console.WriteLine("число нечетное");}
-    else
-        {Console.WriteLine("Число четное");
-        }
+// Console.WriteLine("Введи число: ");
+// int a = int.Parse(Console.ReadLine()!);
+//   if (a % 2==1)
+//     {Console.WriteLine("число нечетное");}
+//     else
+//         {Console.WriteLine("Число четное");
+//         }
 
 // Задача 4 семинар 1
 //Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
 
+Console.WriteLine("Введи число: ");
+int num = int.Parse(Console.ReadLine()!);
+int num1 = 1;
+
+while(num1 <= num) {
+    if (num1 % 2 == 0)
+    {Console.Write($"{num1} ");
+    }   
+    num1++; 
+}
